@@ -14,7 +14,7 @@ function sketchBlow(p) {
 
   p.setup = function() {
     p.createCanvas(p.windowWidth, p.windowHeight);
-    video = p.createCapture(p.VIDEO, { flipped: true });
+    video = p.createCapture(VIDEO, { flipped: true });
     video.size(p.windowWidth, p.windowHeight);
     video.hide();
     bodySegmentation.detectStart(video, r => { segmentation = r; });
